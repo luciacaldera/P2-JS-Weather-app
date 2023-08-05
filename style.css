@@ -1,0 +1,139 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --primary-color: #b4dcdf;
+  --secondary-color: #0aaaa0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #90bbfc;
+}
+
+main {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#user-input-container {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  height: 15rem;
+  padding: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-align: center;
+  flex-shrink: 0;
+}
+#location-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#location-input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  margin: 0.5rem auto 2rem auto;
+  color: var(--secondary-color);
+  width: 100%;
+}
+
+#location-input::placeholder {
+  color: #bebebe;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.button {
+  background-color: var(--secondary-color);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0.5rem auto;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #2ab9c0;
+}
+
+#weather-container {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  width: 28rem;
+  height: 33rem;
+  padding: 2rem;
+  flex-shrink: 0;
+}
+
+#weather-details {
+  list-style: none;
+  font-size: 1.7rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.weather-detail {
+  margin: 1rem;
+  text-align: center;
+}
+
+#temperature {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#feelslike {
+  font-size: 1.2rem;
+}
+
+#condition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#condition img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.smaller-detail:not(:last-of-type) {
+  margin-top: 2.5rem;
+}
+
+.smaller-detail {
+  font-size: 1.3rem;
+  text-align: left;
+}
